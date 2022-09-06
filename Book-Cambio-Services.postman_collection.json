@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "774cf158-33f7-443f-b2a8-3fe750fcce6d",
+		"name": "Book-Cambio-Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4020582"
+	},
+	"item": [
+		{
+			"name": "cambio-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/cambio-service/5/USD/BRL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cambio-service",
+						"5",
+						"USD",
+						"BRL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/book-service/14/BRL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"book-service",
+						"14",
+						"BRL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway-cambio-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/cambio-service/5/USD/BRL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"cambio-service",
+						"5",
+						"USD",
+						"BRL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway-book-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/book-service/14/BRL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"book-service",
+						"14",
+						"BRL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get routers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foo-bar-error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/book-service/foo-bar-error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"book-service",
+						"foo-bar-error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foo-bar-limit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/book-service/foo-bar-limit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"book-service",
+						"foo-bar-limit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foo-bar-bulkhead",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/book-service/foo-bar-bulkhead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"book-service",
+						"foo-bar-bulkhead"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
