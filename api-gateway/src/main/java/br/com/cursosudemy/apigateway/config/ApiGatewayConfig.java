@@ -1,19 +1,19 @@
 package br.com.cursosudemy.apigateway.config;
 
-import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.route.RouteLocator;
-import org.springframework.cloud.gateway.route.builder.Buildable;
-import org.springframework.cloud.gateway.route.builder.PredicateSpec;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.function.Function;
+/**
+ *  A configuração para poder ter o Swagger tem que ser pelo application.yml
+ *
+ */
 
-@Configuration
+//@Configuration
 public class ApiGatewayConfig {
 
-    @Bean
+    /*@Bean
     public RouteLocator gatewayRouter(RouteLocatorBuilder builder){
         return builder.routes()
                 .route(p -> p.path("/get")
@@ -25,5 +25,5 @@ public class ApiGatewayConfig {
                 .route(p -> p.path("/cambio-service/**").uri("lb://cambio-service"))
                 .route(p -> p.path("/book-service/**").uri("lb://book-service"))
                 .build();
-    }
+    }*/
 }

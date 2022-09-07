@@ -12,14 +12,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/cambio-service/5/USD/BRL",
+					"raw": "http://localhost:8000/cambio/5/USD/BRL",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"cambio-service",
+						"cambio",
 						"5",
 						"USD",
 						"BRL"
@@ -34,14 +34,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8100/book-service/14/BRL",
+					"raw": "http://localhost:8100/book/14/BRL",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8100",
 					"path": [
-						"book-service",
+						"book",
 						"14",
 						"BRL"
 					]
@@ -55,14 +55,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8765/cambio-service/5/USD/BRL",
+					"raw": "http://localhost:8765/cambio/5/USD/BRL",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8765",
 					"path": [
-						"cambio-service",
+						"cambio",
 						"5",
 						"USD",
 						"BRL"
@@ -77,14 +77,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8765/book-service/14/BRL",
+					"raw": "http://localhost:8765/book/14/BRL",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8765",
 					"path": [
-						"book-service",
+						"book",
 						"14",
 						"BRL"
 					]
@@ -117,14 +117,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8765/book-service/foo-bar-error",
+					"raw": "http://localhost:8765/book/foo-bar-error",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8765",
 					"path": [
-						"book-service",
+						"book",
 						"foo-bar-error"
 					]
 				}
@@ -137,14 +137,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8765/book-service/foo-bar-limit",
+					"raw": "http://localhost:8765/book/foo-bar-limit",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8765",
 					"path": [
-						"book-service",
+						"book",
 						"foo-bar-limit"
 					]
 				}
@@ -157,14 +157,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8765/book-service/foo-bar-bulkhead",
+					"raw": "http://localhost:8765/book/foo-bar-bulkhead",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8765",
 					"path": [
-						"book-service",
+						"book",
 						"foo-bar-bulkhead"
 					]
 				}

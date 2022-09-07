@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 
 @Tag(name = "Cambio Service API")
 @RestController
-@RequestMapping("cambio-service")
+@RequestMapping("cambio")
 public class CambioResource {
 
     @Autowired

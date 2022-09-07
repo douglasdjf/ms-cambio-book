@@ -1,5 +1,6 @@
 server:
   port: 8000
+  forward-headers-strategy: framework
 spring:
   application:
     name: cambio-service
@@ -25,3 +26,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+springdoc:
+  api-docs:
+    path: /cambio-service/v3/api-docs
+  swagger-ui:
+    #disable-swagger-default-url: true
+    config-url: /cambio-service/v3/api-docs/swagger-config
+    url: /cambio-service/v3/api-docs
+    path: /cambio-service/v3/api-docs

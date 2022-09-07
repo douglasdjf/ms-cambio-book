@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @Tag(name = "FooBar endpoint")
 @Slf4j
 @RestController
-@RequestMapping("book-service")
+@RequestMapping("book")
 public class FooBarResource {
 
     /**

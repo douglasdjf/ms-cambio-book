@@ -1,5 +1,6 @@
 server:
   port: 8100
+  forward-headers-strategy: framework
 spring:
   application:
     name: book-service
@@ -54,3 +55,17 @@ resilience4j:
         max-attempts: 5
         wait-duration: 1s
         enable-exponential-backoff: true
+
+springdoc:
+  api-docs:
+    path: /book-service/v3/api-docs
+  swagger-ui:
+    #disable-swagger-default-url: true
+    config-url: /book-service/v3/api-docs/swagger-config
+    url: /book-service/v3/api-docs
+    path: /book-service/v3/api-docs
+
+
+
+
+
