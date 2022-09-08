@@ -55,8 +55,7 @@
 			<artifactId>springdoc-openapi-webflux-ui</artifactId>
 			<version>1.6.11</version>
 		</dependency>
-
-	</dependencies>
+    </dependencies>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
