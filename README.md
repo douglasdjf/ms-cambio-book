@@ -2,7 +2,7 @@
 
 Utilizado para registrar logs em microserviços
 
-### executar
+### Executar
 ```
 docker run -p 9411:9411 openzipkin/zipkin:2.23.2
 ```
@@ -21,3 +21,6 @@ spring:
     sampler:
       probability: 1.0
 ```
+
+# Docker
+
