@@ -9,20 +9,23 @@ eureka:
 spring:
   application:
     name: api-gateway
+  sleuth:
+    sampler:
+      probability: 1.0
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
       routes:
-        - id: cambio-service
+        - id: cambio
           uri: lb://cambio-service
           predicates:
-          - Path=/cambio-service/**
-        - id: book-service
+          - Path=/cambio/**
+        - id: book
           uri: lb://book-service
           predicates:
-          - Path=/book-service/**
+          - Path=/book/**
         - id: open-api
           uri: lb://api-gateway
           predicates:
