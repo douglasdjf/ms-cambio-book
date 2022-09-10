@@ -28,6 +28,25 @@ services:
     networks:
       - ms-network
 
+  book-db:
+    container_name: book-db
+    image: mysql:5.7.22
+    restart: always
+    environment:
+      TZ: America/Sao_Paulo
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: book_service
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_TCP_PORT: 3310
+    ports:
+      - 3310:3310
+    expose:
+      - 3310
+    networks:
+      - ms-network
+
   naming-server:
     container_name: naming-server
     image: doug397/naming-server:0.0.1-SNAPSHOT
