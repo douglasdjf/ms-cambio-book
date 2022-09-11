@@ -1,3 +1,5 @@
+[![Integração Continuar com GitHub](https://github.com/douglasdjf/ms-cambio-book/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/douglasdjf/ms-cambio-book/actions/workflows/docker-publish.yml)
+
 # Openzipkin/zipkin
 
 Utilizado para registrar logs em microserviços
