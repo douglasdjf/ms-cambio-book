@@ -5,6 +5,18 @@
 
 # Docker Maven Build
 
+
+### Alterar o pom.xml
+
+```
+    <configuration>
+        <image>
+            <name>doug397/${project.artifactId}:${project.version}</name>
+        </image>
+        <pullPolicy>IF_NOT_PRESENT</pullPolicy>
+    </configuration>
+```
+
 ### Necessário para buildar a imagem docker
 ```
 mvn spring-boot:build-image -DskipTests
@@ -17,11 +29,4 @@ docker run -p 8761:8761 doug397/api-gateway:0.0.1-SNAPSHOT
 
 OBS: a principio foi gerada doug397/api-gateway:0.0.1-SNAPSHOT porém depende das informaçoes implementadas no pom.xml
 
-```
-    <configuration>
-        <image>
-            <name>doug397/${project.artifactId}:${project.version}</name>
-        </image>
-        <pullPolicy>IF_NOT_PRESENT</pullPolicy>
-    </configuration>
-```
+### IMPORTANTE: Aqui o processo é feito baseado no pelo maven docker

@@ -3,10 +3,12 @@
 
 # Docker
 
-### executar o comando de construção do arquivo .jar
+### executar o comando de construção do arquivo .jar 
 ```
 mvn clean package -DskipTests
 ```
+
+Obs: Aqui o processo é feito baseado no Dockerfile
 
 
 

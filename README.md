@@ -22,5 +22,4 @@ spring:
       probability: 1.0
 ```
 
-# Docker
 
