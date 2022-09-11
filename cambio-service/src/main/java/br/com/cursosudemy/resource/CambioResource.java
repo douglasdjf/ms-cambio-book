@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 @Slf4j
 @Tag(name = "Cambio Service API")
 @RestController
-@RequestMapping("cambio")
+@RequestMapping("cambio-service")
 public class CambioResource {
 
     @Autowired

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "Book Service API")
 @RestController
-@RequestMapping("book")
+@RequestMapping("book-service")
 public class BookResource {
 
     @Autowired

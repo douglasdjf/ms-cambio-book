@@ -7,7 +7,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/book_service?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
     username: root
     password: root
 
@@ -22,10 +22,10 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL57Dialect
+        dialect: org.hibernate.dialect.MySQL8Dialect
 
   flyway:
-    url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/book_service?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
     #schemas: book_service
     user: root
     password: root
